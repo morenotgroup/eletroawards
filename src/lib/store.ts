@@ -54,10 +54,10 @@ export async function getVote(cpfHash: string) {
 export async function getAllVotes() {
   const redis = redisClient();
   if (!redis) return Array.from(memoryIndex).map((key) => memory.get(key)).filter(Boolean) as VotePayload[];
-  const keys = await redis.smembers<string>(indexKey);
+  const keys = (await redis.smembers(indexKey)) as string[];
   if (!keys.length) return [];
-  const values = await redis.mget<VotePayload>(...keys);
-  return values.filter(Boolean) as VotePayload[];
+  const values = (await redis.mget(...keys)) as Array<VotePayload | null>;
+  return values.filter((value): value is VotePayload => Boolean(value));
 }
 
 export function storageMode() {
