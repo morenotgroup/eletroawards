@@ -143,7 +143,7 @@ button {
 }
 
 .theme-logo {
-  width: min(218px, 62%);
+  width: min(300px, 82%);
   height: auto;
   object-fit: contain;
   opacity: .98;
@@ -1017,7 +1017,7 @@ h1 {
   }
 
   .theme-logo {
-    width: 68%;
+    width: 88%;
   }
 
   h1 {
