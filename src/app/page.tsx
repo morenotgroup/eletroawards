@@ -267,7 +267,7 @@ export default function Home() {
                   </h1>
 
                   <p className="subtitle">
-                    Escolha seus destaques da temporada. Cada categoria aceita apenas um voto.
+                    Escolha seus destaques do EletroAwards 2026. Cada categoria aceita apenas um voto.
                   </p>
                 </div>
 
