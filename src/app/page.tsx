@@ -353,7 +353,7 @@ export default function Home() {
           {screen === "success" && (
             <FinalCard
               title="Votos computados com sucesso."
-              text="Os(as) premiados(as) serão conhecidos na Convenção EletroMidia 2026."
+              text="Os(as) premiados(as) serão conhecidos na Convenção Eletromidia 2026."
             />
           )}
 
